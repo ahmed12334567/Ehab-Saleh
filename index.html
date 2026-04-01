@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopa - Portfolio</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/style (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="theme-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                <i class="fas fa-laptop-code text-primary me-2"></i>Hopa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <div class="search-container me-3">
+                        <input type="text" class="form-control search-input" id="projectSearch"
+                            placeholder="Search projects...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <button id="darkModeToggle" class="btn btn-outline-secondary theme-toggle-btn"
+                        title="Toggle Dark/Light Mode" type="button">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home"
+        class="hero-section vh-100 d-flex align-items-center text-white text-center position-relative overflow-hidden fade-up">
+        <div class="hero-bg"></div>
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="hero-content animate__animated animate__fadeInUp">
+                        <h1 class="display-2 fw-bold mb-4 lh-1">Hi, I'm <span class="gradient-text">Hopa</span></h1>
+                        <p class="lead fs-3 mb-5 opacity-90">Creative Front_End Developer crafting stunning digital
+                            experiences with modern technologies</p>
+                        <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                            <a href="#projects"
+                                class="btn btn-primary btn-lg px-5 py-3 fs-5 fw-semibold shadow-lg lift-hover">Explore
+                                Projects</a>
+                            <a href="#contact"
+                                class="btn btn-outline-light btn-lg px-5 py-3 fs-5 fw-semibold shadow-lg lift-hover">Get
+                                In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-5 section-padding fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5 fw-bold mb-3">About Me</h2>
+                <div class="title-underline mx-auto bg-primary w-25" style="height: 4px;"></div>
+            </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <div class="profile-image mb-4 mb-lg-0 mx-auto mx-lg-0">
+                        <img src="puplic/WhatsApp Image 2026-04-01 at 5.07.42 PM.jpeg" alt="Hopa Profile"
+                            class="img-fluid rounded-circle shadow-lg profile-pic"
+                            style="width: 250px; height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8 ps-lg-5">
+                    <h3 class="h2 fw-bold mb-4 text-primary">Front_End Developer</h3>
+                    <p class="lead mb-4">I create beautiful, performant web applications that solve real problems and
+                        deliver exceptional user experiences. Passionate about staying on the cutting edge of web
+                        technologies.</p>
+                    <div class="row g-3 mb-5">
+                        <div class="col-md-6">
+                            <div class="skill-item d-flex align-items-center p-3 bg-light rounded-3 shadow-sm">
+                                <i class="fas fa-laptop-code text-primary fs-2 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1" style="color: black;">Frontend Mastery</h5>
+                                    <small style="color: black;">React, Vue, Next.js, TailwindCSS</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-item d-flex align-items-center p-3 bg-light rounded-3 shadow-sm">
+                                <i class="fas fa-server text-success fs-2 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1" style="color: black;">Backend Power</h5>
+                                    <small style="color: black;">Node.js, Python, Express, FastAPI</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-grid d-flex flex-wrap gap-2">
+                        <span
+                            class="badge bg-primary-subtle text-primary px-3 py-2 fs-6 fw-semibold border border-primary-subtle">React</span>
+                        <span
+                            class="badge bg-success-subtle text-success px-3 py-2 fs-6 fw-semibold border border-success-subtle">Node.js</span>
+                        <span
+                            class="badge bg-info-subtle text-info px-3 py-2 fs-6 fw-semibold border border-info-subtle">MongoDB</span>
+                        <span
+                            class="badge bg-warning-subtle text-warning px-3 py-2 fs-6 fw-semibold border border-warning-subtle">Python</span>
+                        <span
+                            class="badge bg-danger-subtle text-danger px-3 py-2 fs-6 fw-semibold border border-danger-subtle">Docker</span>
+                        <span
+                            class="badge bg-secondary-subtle text-secondary px-3 py-2 fs-6 fw-semibold border border-secondary-subtle">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-5 section-padding bg-gradient-light fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5 fw-bold mb-3">Featured Projects</h2>
+                <div class="title-underline mx-auto bg-primary w-25 mb-4" style="height: 4px;"></div>
+                <p class="lead text-muted mb-0">Handpicked projects showcasing my skills and creativity</p>
+            </div>
+            <div class="row g-4 project-grid" id="projectGrid">
+                <div class="col-xl-4 col-lg-6 project-card" data-categories="react e-commerce frontend"
+                    data-title="ShopSphere">
+                    <div class="project-wrapper card border-0 shadow-lg h-100 hover-scale transition-all">
+                        <div class="project-image position-relative overflow-hidden rounded-top">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop"
+                                alt="ShopSphere" class="img-fluid w-100 project-img">
+                            <div
+                                class="project-overlay position-absolute d-flex flex-column justify-content-end p-4 bg-dark bg-opacity-80 h-100">
+                                <div>
+                                    <h4 class="text-white mb-1">ShopSphere</h4>
+                                    <p class="text-light-50 small mb-3">Front_End e-commerce platform</p>
+                                    <div class="d-flex gap-2">
+                                        <span class="badge bg-light text-dark small">React</span>
+                                        <span class="badge bg-success text-white small">Node</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold mb-2">Advanced E-Commerce Platform</h5>
+                            <p class="card-text text-muted small mb-3">Complete shopping experience with Stripe
+                                payments, admin dashboard, real-time inventory, and PWA support.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary btn-sm px-3">Live Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm px-3"><i
+                                        class="fab fa-github me-1"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 project-card" data-categories="vue task productivity"
+                    data-title="TaskMaster Pro">
+                    <div class="project-wrapper card border-0 shadow-lg h-100 hover-scale transition-all">
+                        <div class="project-image position-relative overflow-hidden rounded-top">
+                            <img src="puplic/OIP (1).webp" alt="TaskMaster Pro" class="img-fluid w-100 project-img">
+                            <div
+                                class="project-overlay position-absolute d-flex flex-column justify-content-end p-4 bg-dark bg-opacity-80 h-100">
+                                <div>
+                                    <h4 class="text-white mb-1">TaskMaster Pro</h4>
+                                    <p class="text-light-50 small mb-3">Advanced task management</p>
+                                    <div class="d-flex gap-2">
+                                        <span class="badge bg-primary text-white small">Vue 3</span>
+                                        <span class="badge bg-info text-white small">Pinia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold mb-2">Vue 3 Task Management App</h5>
+                            <p class="card-text text-muted small mb-3">Drag & drop Kanban board with team collaboration,
+                                time tracking, PWA capabilities, and local sync.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary btn-sm px-3">Live Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm px-3"><i
+                                        class="fab fa-github me-1"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 project-card" data-categories="nodejs api weather"
+                    data-title="Weather Dashboard">
+                    <div class="project-wrapper card border-0 shadow-lg h-100 hover-scale transition-all">
+                        <div class="project-image position-relative overflow-hidden rounded-top">
+                            <img src="puplic/OIP.webp" alt="Weather Dashboard" class="img-fluid w-100 project-img">
+                            <div
+                                class="project-overlay position-absolute d-flex flex-column justify-content-end p-4 bg-dark bg-opacity-80 h-100">
+                                <div>
+                                    <h4 class="text-white mb-1">Weather Dashboard</h4>
+                                    <p class="text-light-50 small mb-3">Real-time weather insights</p>
+                                    <div class="d-flex gap-2">
+                                        <span class="badge bg-warning text-white small">Node.js</span>
+                                        <span class="badge bg-success text-white small">Chart.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold mb-2">Real-Time Weather App</h5>
+                            <p class="card-text text-muted small mb-3">Dashboard consuming multiple weather APIs with
+                                interactive charts, forecasts, alerts, and location-based services.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary btn-sm px-3">Live Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm px-3"><i
+                                        class="fab fa-github me-1"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5 section-padding bg-dark text-white fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5 fw-bold mb-3" s style="color: aliceblue;">Get In Touch</h2>
+                <div class="title-underline mx-auto bg-primary w-25" style="height: 4px;"></div>
+                <p class="lead text-white-50 mb-0">Have a project in mind? Let's talk!</p>
+            </div>
+            <div class="wrapper mx-auto" style="max-width: 500px;">
+                <form class="form" id="contactForm">
+                    <span class="title">Contact Me</span>
+
+                    <div class="input-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradient-stroke" x1="0" y1="0" x2="24" y2="24"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="black"></stop>
+                                    <stop offset="100%" stop-color="white"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g stroke="url(#gradient-stroke)" fill="none" stroke-width="1">
+                                <path d="M21.6365 5H3L12.2275 12.3636L21.6365 5Z"></path>
+                                <path d="M16.5 11.5L22.5 6.5V17L16.5 11.5Z"></path>
+                                <path d="M8 11.5L2 6.5V17L8 11.5Z"></path>
+                                <path d="M9.5 12.5L2.81805 18.5002H21.6362L15 12.5L12 15L9.5 12.5Z"></path>
+                            </g>
+                        </svg>
+                        <input class="input" type="text" id="contactName" placeholder="Your Name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+
+                    <div class="input-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradient-stroke2" x1="0" y1="0" x2="24" y2="24"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="black"></stop>
+                                    <stop offset="100%" stop-color="white"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g stroke="url(#gradient-stroke2)" fill="none" stroke-width="1">
+                                <path
+                                    d="M3.5 15.5503L9.20029 9.85L12.3503 13L11.6 13.7503H10.25L9.8 15.1003L8 16.0003L7.55 18.2503L5.5 19.6003H3.5V15.5503Z">
+                                </path>
+                                <path d="M16 3.5H11L8.5 6L16 13.5L21 8.5L16 3.5Z"></path>
+                                <path d="M16 10.5L18 8.5L15 5.5H13L12 6.5L16 10.5Z"></path>
+                            </g>
+                        </svg>
+                        <input class="input" type="text" id="contactEmail" placeholder="Your Email">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+
+                    <div class="input-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradient-stroke3" x1="0" y1="0" x2="24" y2="24"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="black"></stop>
+                                    <stop offset="100%" stop-color="white"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g stroke="url(#gradient-stroke3)" fill="none" stroke-width="1">
+                                <path
+                                    d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <textarea class="input" id="contactMessage" rows="4" placeholder="Your Message"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+
+                    <div class="login-button">
+                        <input class="input" type="submit" value="Send Message">
+                    </div>
+                    <div class="texture"></div>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="alert alert-success text-center d-none mt-3 w-100">
+                        Message sent successfully! ✅ I'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+    </section>
+
+
+    <footer class="bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-lg-6">
+                    <p class="mb-2 text-center text-lg-start">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        Designed with love by <a href="#" class="text-white text-decoration-none">ENG.HOPA</a>
+                        Distributed By <a href="https://themewagon.com" class="text-white text-decoration-none">BEEH</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <ul class="list-unstyled d-inline-flex ms-auto">
+                        <li class="me-4"><a href="#" class="text-white-50 text-decoration-none">Terms &amp;
+                                Conditions</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="hopa text-center">developed by</p>
+        </div>
+    </footer>
+    <button id="scrollTopBtn">
+        <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45"></circle>
+        </svg>
+        <span>↑</span>
+    </button>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/main (1).js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+
+</html>
